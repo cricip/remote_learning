@@ -10,9 +10,9 @@ html, body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 9fr auto;
     grid-template-areas: 
-            "header"
-            "main"
-            "footer";
+        "header"
+        "main"
+        "footer";
 }
 
 header {

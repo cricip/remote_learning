@@ -52,8 +52,9 @@ a {
     width: 50px;
 }
 
+/* between details-reviews */
 .reviews {
-    margin: 100px 0; /* intre details-reviews */
+    margin: 100px 0; 
 }
 
 .review-item {
@@ -219,7 +220,4 @@ a {
     .form-comment p {
         font-size: 1.5rem;
     }
-
 }
-
-

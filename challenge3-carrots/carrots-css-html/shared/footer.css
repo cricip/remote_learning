@@ -1,5 +1,3 @@
-/* ______________MOBILE__________________________________ */
-
 footer {
     grid-area: footer;
     background-color: #707070;
@@ -10,8 +8,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-            "first"
-            "second"
+        "first"
+        "second";
 }
 
 .first {
@@ -43,7 +41,6 @@ footer > .item {
     text-decoration: underline;
     font-size: 2rem;
 }
-
 
 /* ______________DESKTOP__________________________________ */
 
@@ -87,5 +84,4 @@ footer > .item {
         margin: 0 20px;
         font-size: 1rem;
     }
-
 }
