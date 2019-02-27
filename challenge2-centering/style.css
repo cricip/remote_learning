@@ -1,6 +1,5 @@
 /** Flexbox**/
-
-.box{
+.box {
 	background: blue;
 	width: 200px;
 	height: 200px;
@@ -9,7 +8,7 @@
 	align-items: center;
 }
 
-.box1{
+.box1 {
 	background: red;
 	width: 100px;
 	height:100px;
