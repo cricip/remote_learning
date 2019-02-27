@@ -1,0 +1,17 @@
+/** Flexbox**/
+
+.box{
+	background: blue;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center; /** space-around **/
+	align-items: center;
+}
+
+.box1{
+	background: red;
+	width: 100px;
+	height:100px;
+	border-radius:50%;
+}
