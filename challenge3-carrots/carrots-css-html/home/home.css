@@ -1,0 +1,79 @@
+/* ______________MOBILE__________________________________ */
+
+html body {
+    height: 100%;
+    font-family: 'Segoe UI';
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr auto;
+    grid-template-areas: 
+            "header"
+            "footer";
+}
+
+header {
+    background-color: #CBD8C1;
+    grid-area: header;  
+    color: #707070;
+    text-align: center;
+    display: grid;
+    font-size: 2rem;
+}
+
+.top {
+    align-self: center;
+}
+
+.top > p {
+    margin: 60px;
+}
+
+.top > p:first-child {       /* Bunbun */
+    font-family: 'Pacifico';
+    font-size: 8rem;
+}
+
+.see-goods-btn {
+    margin-top: 200px;
+    margin-bottom: 400px;
+    font-size: 3rem;
+}
+
+a {
+    background-color: #EC7A23;
+    color: white;
+    text-decoration: none;
+    padding: 30px 100px; 
+    border-radius: 5px;
+}
+
+/* _____________________DESKTOP___________________ */
+
+@media only screen and (min-width: 992px) {   
+    
+    header {
+        font-size: 2rem;
+    }
+
+    .top {
+        margin: 8rem;
+    }
+
+    .top > p:first-child {
+        font-size: 5rem;
+    }
+
+    .see-goods-btn {
+        font-size: 2.5rem; 
+        margin-top: 120px;
+        margin-bottom: 130px;
+    }
+
+    a {
+        padding: 20px 80px;
+    }
+} 
