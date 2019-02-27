@@ -1,0 +1,157 @@
+/* ___________________MOBILE FIRST____________________ */
+/* cea normala pt desktop si una de doua ori mai mica pt screen-size mai mic! */
+
+content {
+    background-color: #CBD8C1;
+}
+
+.search {
+    display: none;
+}
+
+li {
+    background-color: white;
+    color: #707070;
+    border: 2px solid #9f9f9f;
+    margin: 50px;
+}
+
+.list-img img {
+    width: 50%;
+}
+
+.title-btn {
+    text-align: center;
+    margin: 25px;
+}
+
+.title-btn > h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.more-btn {
+    background-color: #EC7A23;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 15px 60px;
+    border-radius: 3px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+    
+.pagination a {
+    background-color: white;
+    color: #707070;
+    float: left;
+    padding: 8px 12px;    /* L,l */
+    text-decoration: none;
+    border: 1.5px solid #9f9f9f;
+}
+
+.pagination a.active {
+    background-color: #434A3E;
+    color: white;
+    border: 2px #434A3E;
+}
+    
+.pagination a:hover:not(.active) {
+    background-color: #9f9f9f;
+}
+    
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+    
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* ___________________DESKTOP_____________________________ */
+
+@media only screen and (min-width: 992px) {
+
+    .search {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 50px 0;
+    }
+
+    .search > h2 {
+        display: inline-block;
+        color: #434A3E;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-right: 6rem;
+    }
+
+    .search > input {
+        width: 55%;
+        height: 40px;
+        margin-left: 1rem;
+        border: 1px solid #cecccc;
+    }
+
+    .search-svg {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        color: #9f9f9f;
+        border: 1px solid #cecccc;
+    }
+
+    .search-svg svg {
+        width: 20px;
+        margin-top: 5px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        grid-auto-flow: dense;
+    }
+
+    ul {
+        margin: 30px 50px;
+    }
+
+    li {
+        margin: 10px;
+        border: 1px solid #9f9f9f;
+    }
+
+    .list-img {
+        width: 100%;
+        height: 15em;
+        overflow: hidden; /*  The overflow is clipped, and the rest of the content will be invisible */
+    }
+
+    .list-img img {
+        width: 100%;
+    }
+
+    .title-btn > h2 {
+        margin: 20px 0;
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .more-btn {
+        float: right;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        padding: 10px 50px;
+        border-radius: 3px;
+    }
+} 
+
