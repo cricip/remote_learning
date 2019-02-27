@@ -7,10 +7,10 @@
 }
 
 [class*="col-"] {
-    float: left; /*pe oriz toate*/
+    float: left; /*oriz*/
     background-color: #c4e;
     border: 1px solid #849;
-    margin: 0 1%; /*intre linii, col*/
+    margin: 0 1%; /*ibetween lin, col*/
 }
 
 /*.row:before, .row:after{
@@ -25,11 +25,11 @@
 */
  
 .col-1 {
-    width: 6%; /* 72/12 */
+    width: 6%; /*72/12*/
 }
 
 .col-2 {
-    width: 12%; /* 12/100 -12 coloane*/
+    width: 12%; /*12 col*/
 }
 
 
@@ -37,12 +37,11 @@
     display: flow-root;
 }
 
-
 .special {
     border: 5px solid black;
 }
 
-@media screen and (max-width: 620px){  /* se schimba cand maresc fila, pun media NOT--> inverss*/
+@media screen and (max-width: 620px){  /* media NOT--> invers*/
     .col-1 {
         width: 100%;
         margin: 0;
