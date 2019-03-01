@@ -9,10 +9,11 @@ content {
 }
 
 li {
-    background-color: white;
-    color: #707070;
     border: 2px solid #9f9f9f;
     margin: 50px;
+
+    background-color: white;
+    color: #707070;
 }
 
 .list-img img {
@@ -20,25 +21,28 @@ li {
 }
 
 .title-btn {
-    text-align: center;
     margin: 25px;
+    text-align: center;
 }
 
 .title-btn > h2 {
+    margin: 15px 0;
+
     font-size: 2rem;
     text-align: left;
-    margin: 15px 0;
 }
 
 .more-btn {
-    background-color: #EC7A23;
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 15px 60px;
+    display: inline-block;
     border-radius: 3px;
     margin: 20px 0;
-    display: inline-block;
+    padding: 15px 60px;
+
+    background-color: #EC7A23;
+    color: white;
+
+    font-size: 1.5rem;
+    text-decoration: none;  
 }
 
 .pagination {
@@ -48,18 +52,21 @@ li {
 }
     
 .pagination a {
-    background-color: white;
-    color: #707070;
+    border: 1.5px solid #9f9f9f;
     float: left;
     padding: 8px 12px;    /* L,l */
+
+    background-color: white;
+    color: #707070;
+
     text-decoration: none;
-    border: 1.5px solid #9f9f9f;
 }
 
 .pagination a.active {
+    border: 2px #434A3E;
+
     background-color: #434A3E;
     color: white;
-    border: 2px #434A3E;
 }
     
 .pagination a:hover:not(.active) {
@@ -86,27 +93,31 @@ li {
         margin: 60px 0 50px 0;
     }
 
-    .search > h2 {
+    .search > h2 {       
         display: inline-block;
+        margin-right: 6rem;
+
         color: #434A3E;
+
         font-size: 2rem;
         font-weight: bold;
-        margin-right: 6rem;
     }
 
-    .search > input {
+    .search > input {    
+        border: 1px solid #cecccc;
         width: 55%;
         height: 40px;
         margin-left: 1rem;
-        border: 1px solid #cecccc;
     }
 
     .search-svg {
+        border: 1px solid #cecccc;
         height: 40px;
-        width: 40px;
+        width: 40px; 
+
         background-color: white;
         color: #9f9f9f;
-        border: 1px solid #cecccc;
+    
     }
 
     .search-svg svg {
@@ -125,14 +136,14 @@ li {
     }
 
     li {
-        margin: 10px;
         border: 1px solid #9f9f9f;
+        margin: 10px;
     }
 
     .list-img {
         width: 100%;
         height: 15em;
-        overflow: hidden; /*  The overflow is clipped, and the rest of the content will be invisible */
+        overflow: hidden; 
     }
 
     .list-img img {
@@ -140,16 +151,17 @@ li {
     }
 
     .title-btn > h2 {
-        margin: 20px 0;
-        font-size: 1.5rem;
         height: 100%;
+        margin: 20px 0;
+
+        font-size: 1.5rem;    
     }
 
     .more-btn {
-        float: right;
-        margin-bottom: 15px;
-        font-size: 1rem;
-        padding: 10px 50px;
         border-radius: 3px;
+        margin-bottom: 15px;
+        padding: 10px 50px;
+        float: right;
+        font-size: 1rem;  
     }
 } 

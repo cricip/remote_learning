@@ -1,12 +1,13 @@
 html, body {
     margin: 0;
     height: 100%;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-    height: 100%;
     display: grid;
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 9fr auto;
     grid-template-areas: 
@@ -16,12 +17,14 @@ html, body {
 }
 
 header {
-    background-color: #434A3E;
-    color: white;
-    text-align: center;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-rows: 1fr;
+
+    background-color: #434A3E;
+    color: white;
+
+    text-align: center;
 }
 
 .top, .bars {
@@ -45,8 +48,9 @@ header {
 }
 
 .top > h1 {
-    text-align: left;
     margin-left: 5rem;
+
+    text-align: left;
     font-size: 3rem;
     font-family: 'Pacifico', cursive;
 }
@@ -63,9 +67,10 @@ header {
 
     .top > h1 {
         display: inline-block;
-        font-size: 2rem;
         margin-left: 5rem;
         margin-right: 1.5rem;
+
+        font-size: 2rem;
     }
 
     a, a:active, a:hover {
@@ -86,6 +91,7 @@ header {
     .cart-login {
         display: inline-block;
         margin: 20px;
+
         text-align: right;
     }
 
@@ -106,13 +112,16 @@ header {
 
     .count-items {
         position: absolute;
-        font-size: 0.5rem;
         top: -7px;
         left: 65px;
-        padding: 6px;
-        background-color: #EC7A23;
+
         border-radius: 100%;
-        color: white; 
+        padding: 6px;
+
+        background-color: #EC7A23;
+        color: white;
+
+        font-size: 0.5rem; 
     }
 
     a svg {

@@ -1,25 +1,27 @@
 html body {
-    height: 100%;
     font-family: 'Segoe UI';
+    height: 100%;
 }
 
 .container {
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8fr auto;
     grid-template-areas: 
-            "header"
-            "footer";
+        "header"
+        "footer";
+    height: 100%;
 }
 
 header {
-    background-color: #CBD8C1;
-    grid-area: header;  
-    color: #707070;
-    text-align: center;
     display: grid;
+    grid-area: header;
+
+    background-color: #CBD8C1;
+    color: #707070;
+       
     font-size: 2rem;
+    text-align: center;  
 }
 
 .top {
@@ -30,23 +32,29 @@ header {
     margin: 60px;
 }
 
-.top > p:first-child {       /* Bunbun */
+.top > p:first-child {      
     font-family: 'Pacifico';
     font-size: 8rem;
 }
 
-.see-goods-btn {
+.see-goods-btn { 
     margin-top: 200px;
     margin-bottom: 400px;
+
     font-size: 3rem;
 }
 
 a {
+    /* Display & Box Model */
+    border-radius: 5px;
+    padding: 30px 100px; 
+
+    /* Color */
     background-color: #EC7A23;
     color: white;
+
+    /* Text */
     text-decoration: none;
-    padding: 30px 100px; 
-    border-radius: 5px;
 }
 
 /* _____________________DESKTOP___________________ */
@@ -66,9 +74,10 @@ a {
     }
 
     .see-goods-btn {
-        font-size: 2.5rem; 
         margin-top: 120px;
         margin-bottom: 130px;
+
+        font-size: 2.5rem; 
     }
 
     a {
