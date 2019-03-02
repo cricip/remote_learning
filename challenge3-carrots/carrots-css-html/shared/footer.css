@@ -19,6 +19,14 @@ footer {
     grid-template-rows: auto;
 }
 
+.first > div:first-child > span {
+    display: block;
+    margin-bottom: 2rem;
+    
+    text-align: right;
+    font-size: 1rem;
+}
+
 .second {
     display: grid;
     grid-template-columns: 30% 40% auto;
@@ -33,11 +41,7 @@ footer > .item {
     padding: 30px 5px; /* top=bottom, left=right */
 }
 
-.first > div:first-child > p {
-    float: right;
-    line-height: normal;
-    font-size: 1rem;
-}
+
 
 .footer-img {
     width: 5rem;
