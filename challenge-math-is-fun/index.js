@@ -8,7 +8,7 @@ function run() {
     displayError = document.querySelectorAll('span')[0];
     displayResult = document.querySelectorAll('span')[1];
 
-    if (isNaN(firstCol) && isNaN(secondCol) && isNaN(thirdCol) && isNaN(fourthCol)) {
+    if (isNaN(firstCol) || isNaN(secondCol) || isNaN(thirdCol) || isNaN(fourthCol)) {
         displayResult.innerHTML = 'No result';
         displayError.innerHTML = 'Please insert only integer numbers!';
     } else {
