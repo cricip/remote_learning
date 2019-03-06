@@ -1,23 +1,23 @@
 $(document).ready(function(){
     // Activate Carousel
-    $("#myCarousel").carousel();
+    $("#carousel").carousel();
         
     // Enable Carousel Indicators
     $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
+        $("#carousel").carousel(0);
     });
     $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
+        $("#carousel").carousel(1);
     });
     $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
+        $("#carousel").carousel(2);
     });
         
     // Enable Carousel Controls
     $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
+        $("#carousel").carousel("prev");
     });
     $(".right").click(function(){
-        $("#myCarousel").carousel("next");
+        $("#carousel").carousel("next");
     });
 });
