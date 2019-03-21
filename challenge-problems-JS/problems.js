@@ -45,7 +45,7 @@ console.log(pluck(demoArr, 'color'));  // => ['red', 'green', 'turqoize' .......
 const heightArr = demoArr.map(a => a.height);
 const widthArr = demoArr.map(a => a.width);
 
-const calculateArea = () => heightArr.map(function(num, index) {
+const calculateArea = arr => heightArr.map(function(num, index) {
     return num * widthArr[index];
 })
 
@@ -179,7 +179,6 @@ const classes = [
   [ 'Math', '11:30AM', 'Mrs. Vitalis' ]
 ];
 
-const objClasses = [];
-
+const objClasses = classes.map((element) => ({subject: element[0], time: element[1], teacher: element[2]}))
 
 console.log(objClasses);
