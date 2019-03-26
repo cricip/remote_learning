@@ -1,9 +1,9 @@
 function run() {
 
-    firstCol = document.getElementById("first").value;
-    secondCol = document.getElementById("second").value;
-    thirdCol = document.getElementById("third").value;
-    fourthCol = document.getElementById("fourth").value;
+    firstCol = + document.getElementById("first").value;
+    secondCol = + document.getElementById("second").value;
+    thirdCol = + document.getElementById("third").value;
+    fourthCol = + document.getElementById("fourth").value;
 
     displayError = document.querySelectorAll('span')[0];
     displayResult = document.querySelectorAll('span')[1];
